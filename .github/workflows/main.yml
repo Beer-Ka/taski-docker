@@ -36,7 +36,7 @@ jobs:
         python -m pip install --upgrade pip setuptools
         python -m pip install "setuptools<71" 
         python -m pip install flake8==6.0.0 flake8-isort==6.0.0
-        python -c "import pkg_resources
+        python -c "import pkg_resources"
         pip install -r ./backend/requirements.txt 
     # Этот шаг дополним переменными для доступа к БД
     - name: Test with flake8 and django tests
